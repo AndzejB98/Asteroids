@@ -19,6 +19,7 @@ while True:
 
     screen.fill((0, 0, 0))  # Fill the screen with black
     player.draw(screen)  # Draw the player
+    player.update(dt)  # Update the player state
     pygame.display.flip() # Update the display
     dt = clock.tick(60) / 1000
 
